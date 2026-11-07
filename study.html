@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotaLearn - Изучение</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="training-page">
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">D</div>
+            <div>
+                <h2>DotaLearn</h2>
+                <span>ITEM KNOWLEDGE</span>
+            </div>
+        </div>
+
+        <div class="menu-title">МЕНЮ</div>
+
+        <nav>
+            <a href="index.html" class="nav-link">
+                <span>⌂</span> Главная
+            </a>
+
+            <a href="study.html" class="nav-link active">
+                <span>▤</span> Изучение
+            </a>
+
+            <a href="training.html" class="nav-link">
+                <span>▦</span> Тренировка
+            </a>
+
+            <a href="index.html#progress" class="nav-link">
+                <span>◷</span> Прогресс
+            </a>
+
+        </nav>
+
+        <div class="sidebar-categories">
+            <div class="menu-title">КАТЕГОРИИ</div>
+            <div class="sidebar-category-list" id="sidebar-category-filters"></div>
+            <div id="category-filters" hidden></div>
+        </div>
+
+        <div class="sidebar-bottom">
+
+            <div class="version">VERSION 0.1.2a</div>
+            <div class="copyright">DotaLearn © 2026</div>
+        </div>
+
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <span class="breadcrumb">DOTALEARN / ИЗУЧЕНИЕ</span>
+                <h1>Изучение предметов</h1>
+            </div>
+
+            <div class="profile">
+                <div class="profile-avatar">В</div>
+                <span>Валодя</span>
+            </div>
+        </header>
+
+        <div class="study-container">
+
+            <section class="study-heading">
+                <div>
+                    <p class="eyebrow">БАЗА ЗНАНИЙ</p>
+                    <h1>Каталог предметов</h1>
+                    <p class="subtitle">
+                        Изучай предметы, их характеристики и способности.
+                    </p>
+                </div>
+
+                <div class="study-counter">
+                    <strong id="items-count">0</strong>
+                    <span>предметов</span>
+                </div>
+            </section>
+
+            <div class="study-search">
+                <span>⌕</span>
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Поиск предмета..."
+                >
+            </div>
+
+            <div class="study-results">
+                <span id="results-count">Загрузка предметов...</span>
+            </div>
+
+            <section class="study-grid" id="study-grid"></section>
+
+            <div id="study-empty" class="study-empty" hidden>
+                <h2>Ничего не найдено</h2>
+                <p>Попробуй изменить поисковый запрос или категорию.</p>
+            </div>
+
+        </div>
+
+        <footer>
+            DOTALEARN <span>•</span> ПРИЛОЖЕНИЕ ВСЁ ЕЩЁ В РАЗРАБОТКЕ
+        </footer>
+
+    </main>
+
+</div>
+
+<div class="study-modal" id="study-modal">
+    <div class="study-modal-content">
+        <button class="study-modal-close" id="modal-close">×</button>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+</div>
+
+<script src="js/study.js"></script>
+<script src="js/transitions.js"></script>
+</body>
+</html>

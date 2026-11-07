@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotaLearn</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <!-- Боковая панель -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">D</div>
+                <div>
+                    <h2>DotaLearn</h2>
+                    <span>ITEM KNOWLEDGE</span>
+                </div>
+            </div>
+
+            <div class="menu-title">МЕНЮ</div>
+
+            <nav>
+                <a href="#" class="nav-link active">
+                    <span>⌂</span> Главная
+                </a>
+                <a href="study.html" class="nav-link">
+                    <span>▤</span> Изучение
+                </a>
+                <a href="#categories" class="nav-link">
+                    <span>▦</span> Категории
+                </a>
+                <a href="#progress" class="nav-link">
+                    <span>◷</span> Прогресс
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="version">VERSION 0.1.2a</div>
+                <div class="copyright">DotaLearn © 2026</div>
+            </div>
+        </aside>
+
+        <!-- Основная часть -->
+        <main class="main">
+
+            <header class="topbar">
+                <div>
+                    <span class="breadcrumb">ТРЕНАЖЁР / ГЛАВНАЯ</span>
+                    <h1>Главная</h1>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-avatar">В</div>
+                    <span>Валодя</span>
+                </div>
+            </header>
+
+            <section class="welcome">
+                <div class="welcome-content">
+                    <span class="eyebrow">DOTA 2 LEARN</span>
+                    <h2>Знай каждый<br>предмет <span>Dota 2.</span></h2>
+                    <p>
+                        Изучай предметы, запоминай характеристики
+                        и проверяй свои знания.
+                    </p>
+                    <a href="training.html" class="primary-button" id="startButton">
+                        Начать тренировку →
+                    </a>
+                </div>
+
+                <div class="welcome-decoration">
+                    <div class="rune">✦</div>
+                    <div class="decoration-circle circle-one"></div>
+                    <div class="decoration-circle circle-two"></div>
+                </div>
+            </section>
+
+            <!-- Статистика -->
+            <section class="stats" id="progress">
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">▦</div>
+                    <div>
+                        <span class="stat-label">Всего предметов</span>
+                        <h3 id="total-items">0</h3>
+                        <span class="stat-description">В базе данных</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">✓</div>
+                    <div>
+                        <span class="stat-label">Изучено</span>
+                        <h3 id="studied-items">0</h3>
+                        <span class="stat-description">Предметов освоено</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">◎</div>
+                    <div>
+                        <span class="stat-label">Точность</span>
+                        <h3 id="accuracy">0%</h3>
+                        <span class="stat-description">Правильных ответов</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Категории -->
+            <section class="categories-section" id="categories">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">ИЗУЧЕНИЕ</span>
+                        <h2>Категории предметов</h2>
+                    </div>
+                    <span class="section-count">06 КАТЕГОРИЙ</span>
+                </div>
+
+                <div class="category-grid">
+
+                    <button class="category-card" data-category="attributes">
+                        <div class="category-symbol purple">✥</div>
+                        <h3>Атрибуты</h3>
+                        <p>Сила, ловкость, интеллект</p>
+                        <span class="category-arrow">↗</span>
+                    </button>
+
+                    <button class="category-card" data-category="damage">
+                        <div class="category-symbol red">⚔</div>
+                        <h3>Урон</h3>
+                        <p>Увеличение наносимого урона</p>
+                        <span class="category-arrow">↗</span>
+                    </button>
+
+                    <button class="category-card" data-category="defense">
+                        <div class="category-symbol blue">⬡</div>
+                        <h3>Защита</h3>
+                        <p>Броня, сопротивление и здоровье</p>
+                        <span class="category-arrow">↗</span>
+                    </button>
+
+                    <button class="category-card" data-category="mobility">
+                        <div class="category-symbol green">➤</div>
+                        <h3>Мобильность</h3>
+                        <p>Скорость и перемещение</p>
+                        <span class="category-arrow">↗</span>
+                    </button>
+
+                    <button class="category-card" data-category="regeneration">
+                        <div class="category-symbol orange">✚</div>
+                        <h3>Регенерация</h3>
+                        <p>Восстановление здоровья и маны</p>
+                        <span class="category-arrow">↗</span>
+                    </button>
+
+                    <button class="category-card" data-category="neutral">
+                        <div class="category-symbol gold">✧</div>
+                        <h3>Нейтральные</h3>
+                        <p>Нейтральные предметы</p>
+                        <span class="category-arrow">↗</span>
+                    </button>
+
+                </div>
+            </section>
+
+            <footer>
+                DOTALEARN <span>•</span> ПРИЛОЖЕНИЕ ВСЁ ЕЩЁ В РАЗРАБОТКЕ
+            </footer>
+
+        </main>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html>
